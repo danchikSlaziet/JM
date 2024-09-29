@@ -34,7 +34,9 @@ function getRandomText() {
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.fourth-page').style.opacity = '1';
   setTimeout(() => {
+    document.querySelector('.elem__title').innerHTML = 'Поздравляем';
     document.querySelector('.elem__subtitle').innerHTML = getRandomText();
+    document.querySelector('.elem__img').style.opacity = '1';
   }, 700)
 });
 function parseQuery(queryString) {
