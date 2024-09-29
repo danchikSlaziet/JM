@@ -25,7 +25,7 @@ body {
   position: relative;
   min-height: 100vh;
   background-color: #CF002C;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 button:hover {
