@@ -1,0 +1,138 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "TT";
+  src: url("./fonts/TT-Prosto-Sans-Trial-Regular.woff") format('woff'), url("./fonts/TT-Prosto-Sans-Trial-Regular.otf") format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "TT";
+  src: url("./fonts/TT-Prosto-Sans-Trial-Bold.woff") format('woff'), url("./fonts/TT-Prosto-Sans-Trial-Bold.otf") format('otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  color: #FFF;
+  font-weight: 700;
+  font-family: 'TT', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  background-color: #CF002C;
+  overflow-x: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#elem {
+  width: 311px;
+  height: 311px;
+  z-index: 2;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+   position: relative;
+   margin: 0 auto;
+   margin-bottom: 25px;
+   flex-shrink: 0;
+}
+@media screen and (max-height: 550px) {
+  #elem {
+    margin-bottom: 0;
+  }
+}
+canvas {
+  z-index: 2;
+}
+/* ============== FOURTH-PAGE =============== */
+
+.fourth-page {
+  background-color: #CF002C;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+@media screen and (max-height: 580px) {
+  .logo {
+    margin-bottom: 20px;
+  }
+}
+.main-text {
+  color: #FFF;
+  margin-bottom: 52px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25.96px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media screen and (max-height: 580px) {
+  .main-text {
+    font-size: 18px;
+  }
+}
+.top-help {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  pointer-events: none;
+}
+.bottom-help {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  pointer-events: none;
+}
+.elem__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.elem__img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.elem__title {
+  color: rgba(207, 0, 44, 1);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.32px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: center;
+  margin-bottom: 13px;
+}
+.elem__subtitle {
+  color: rgba(29, 29, 27, 1);
+  max-width: 262px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.52px;
+  letter-spacing: -0.30000001192092896px;
+  text-align: center;
+}
