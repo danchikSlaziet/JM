@@ -75,6 +75,12 @@ canvas {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-height: 500px) {
+  .logo {
+    margin-bottom: 0;
+    width: 85px;
+  }
+}
 .main-text {
   color: #FFF;
   margin-bottom: 52px;
