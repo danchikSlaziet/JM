@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.querySelector('.elem__title').innerHTML = 'Поздравляем';
     document.querySelector('.elem__subtitle').innerHTML = getRandomText();
-    document.querySelector('.elem__img').style.opacity = '1';
+    document.querySelector('.elem__img').src="images/elem-img.svg";
   }, 700)
 });
 function parseQuery(queryString) {
