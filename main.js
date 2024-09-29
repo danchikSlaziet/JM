@@ -32,6 +32,11 @@ function getRandomText() {
   }
 }
 document.querySelector('.elem__subtitle').innerHTML = getRandomText();
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    document.getElementById('elem').style.opacity = '1';
+  }, 500)
+});
 function parseQuery(queryString) {
   let query = {};
   let pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
