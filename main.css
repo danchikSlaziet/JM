@@ -61,6 +61,8 @@ canvas {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transition: opacity .4s linear;
 }
 
 .logo {

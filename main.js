@@ -32,6 +32,7 @@ function getRandomText() {
   }
 }
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.fourth-page').style.opacity = '1';
   setTimeout(() => {
     document.querySelector('.elem__subtitle').innerHTML = getRandomText();
   }, 700)
