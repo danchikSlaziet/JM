@@ -50,6 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
   let user_data_str = parseQuery(query).user;
   let user_data = JSON.parse(user_data_str);
   userData = user_data;
+  app.disableVerticalSwipes();
   app.expand();
   app.ready();
   userChatId = user_data["id"];
