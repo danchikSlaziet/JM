@@ -35,7 +35,10 @@ document.querySelector('.elem__subtitle').innerHTML = getRandomText();
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     document.getElementById('elem').style.opacity = '1';
-  }, 500)
+  }, 100)
+  setTimeout(() => {
+    document.querySelector('.elem__content').style.opacity = '1';
+  }, 100)
 });
 function parseQuery(queryString) {
   let query = {};
